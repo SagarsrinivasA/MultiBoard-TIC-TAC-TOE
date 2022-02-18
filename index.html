@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="alignment">
+    <div class="neon">
+        <span class="text" data-text="TIC TAC TOE">TIC TAC TOE</span>
+        <span class="gradient"></span>
+        <span class="spotlight"></span>
+    </div>
+    <p>Player 1 name:</p>
+    <input type="text" placeholder="type here" id="p1" name="p1"/>
+    <br>
+    <p>Player 2 name:</p>
+    <input type="text" placeholder="typr here" id="p2" name="p2">
+    <br>
+
+    <label for="dimensione"><p>Choose a dimension</p></label>
+    <select name="dimension" id="dimension">
+        <option value="3">3*3</option>
+        <option value="4">4*4</option>
+        <option value="5">5*5</option>
+        <option value="6">6*6</option>
+        <option value="7">7*7</option>
+        <option value="8">8*8</option>
+    </select>
+    <br>
+
+    <button id="gamestart" onclick="startGame()">Start Game</button>
+
+    <div id="game-container" class="hide">
+        <div id="turn"></div>
+    </div>
+    <br>
+
+    <input type="reset" class="resetbtn" onclick="location.reload();">
+    
+</body>
+</html>
